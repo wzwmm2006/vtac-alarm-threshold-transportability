@@ -26,5 +26,5 @@ def test_public_release_smoke():
     tau95 = next(row for row in rows if float(row["target_sensitivity"]) == 0.95)
     assert float(tau95["threshold"]) == 0.102635692
     lock = yaml.safe_load((ROOT / "manifests/STAGE1_PRIMARY_RESULTS_LOCK_v2.yaml").read_text(encoding="utf-8"))
-    assert lock["cohorts"]["challenge2015_external"]["tau_95"]["sensitivity_ci"] == [0.9062, 0.9897]
+    assert lock["external"]["tau95"]["sensitivity_ci"] == [0.9062, 0.9897]
     assert (ROOT / "src/evaluation/vtac_safety_thresholds.py").exists()
