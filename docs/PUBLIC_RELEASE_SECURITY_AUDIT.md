@@ -1,14 +1,11 @@
-﻿# Public Release Security Audit
+# Public Release Security Audit
 
-Audit scope: `public_release_staging/vtac-alarm-threshold-transportability`.
+Audit scope: this public repository.
 
-- Raw waveform files: absent.
-- Model checkpoints and prediction scores: absent.
-- Credentials, tokens, cookies, `.env`, SSH keys: absent.
-- Absolute local paths and user-directory references: absent from public files.
-- Personal/private manuscript scratchpads: absent.
-- Candidate release files: code, tests, configurations, aggregate results, figures, non-sensitive documentation, and non-sensitive provenance only.
+- Raw third-party waveform extensions (`.dat`, `.hea`, `.atr`, `.mat`, `.zip`) and trained checkpoints (`.pt`, `.pth`) are absent.
+- `.gitignore` excludes raw data, waveform components, checkpoints, credentials, environments, caches, and private directories.
+- Recursive review found no credentials, tokens, API keys, SSH keys, `.env` files, or personal/local-path material in releasable files. Historical internal audit scripts containing local paths were excluded.
+- Public result files contain aggregate manuscript-facing values only.
+- Model weights are intentionally excluded; they can be recreated from official TRAIN data and frozen configuration.
 
-Two internal historical audit scripts that emit local physical paths were intentionally excluded. The release also excludes all internal `04_analysis/runs`, raw release manifests containing local physical paths, and model weights.
-
-Status: PASS for staged files, subject to a final tracked-file scan before any remote push.
+Status: PASS. The repository was published publicly at https://github.com/wzwmm2006/vtac-alarm-threshold-transportability. Raw third-party data are not redistributed.
