@@ -1,0 +1,26 @@
+schema: vtac-primary-fcn-config-lock-v3
+status: frozen_before_training_amendment
+supersedes: PRIMARY_FCN_CONFIG_LOCK_v2
+architecture: official VTaC realtime FCN
+sampling_rate_hz: 250
+input_window: "[alarm-2500, alarm)"
+input_length_samples: 2500
+input_channels: 4
+input_channel_order: [ECG1, ECG2, PPG_PLETH, ABP]
+canonical_ecg_labels: [I, II, III, aVR, aVL, aVF, V, V1, V2, V3, V4, V5, V6, MCL]
+canonical_ppg_label: PLETH
+canonical_abp_label: ABP
+ecg_selection: first_two_canonical_ecg_in_original_wfdb_header_order
+one_ecg_handling: ECG1_observed_ECG2_zero_fill
+zero_ecg_handling: structural_failure
+missing_ppg_or_abp: zero_fill
+invalid_present_channel: final_channel_nan_to_zero_equivalent
+filtering_scope: extracted_realtime_window_only
+batch_size: 32
+learning_rate: 0.0001
+dropout_probability: 0.0
+positive_class_weight: 3.54
+differential_or_contrastive_loss_weight: 0.0
+adam_weight_decay: 0.005
+maximum_inner_cv_epochs: 500
+prespecified_seeds: [20260811, 20260812, 20260813, 20260814, 20260815]

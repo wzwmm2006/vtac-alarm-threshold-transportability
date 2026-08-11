@@ -1,0 +1,66 @@
+{
+  "schema": "vtac-stage1f-external-evaluation-v1",
+  "amendment_003_sha256": "34bfc53f79da0b3476670a35bcbd261593a7d549796e7879a018c271f159fd7e",
+  "cohort_lock_yaml_sha256": "c5893f0324b1a734f51b25d4fcb852d5e87274200bd0a7aa88f05069d2ab11ad",
+  "cohort_lock_md_sha256": "f8027330896321d0615f31d2a0f1a23de1bf0280f89a5bcfae9c362d398d4f08",
+  "official_alarms_sha256": "9a19f94b56e6d55f9bb34f8f9a2d2e3323113eef974be8e7ea9d3c70e01e14aa",
+  "challenge_release_manifest_sha256": "0d6f121fa139f127de075aebbb1be98059fd55e960aada9522f1cc993c0d095d",
+  "external_cohort_manifest_sha256": "4e97d0ab2ca6fc4a862e7f480e5fc47dc15f315579f6762762cbf7eee428116a",
+  "external_preprocessing_manifest_sha256": "de75a460f2616168fc1d116b8071a7281f4658e5b05b5b97fb56196499a09ed9",
+  "external_scores_sha256": "e43a3d48cb36e7eb032a8465765f3517391383f4c11b80a7209ba9bc8aa60bf9",
+  "locked_thresholds_sha256": "08f14c56832b2fee332866b40b2f079f7447768e14147fa731d1b072a7ab384f",
+  "model_freeze_sha256": "a3b18d3f07383b1ede84607c95c33d909da6fd99534e1a7ef1851e704dd198dc",
+  "threshold_freeze_sha256": "0aa5f485dcd6495729cda85f9bf7deed7888bf39a1c13b5a3834e50d54e54921",
+  "test_evaluation_sha256": "ac3ed4e4e299523af3c8d6b96bd805365d4ff8f0b2e24dd68bc0759eb6d1551c",
+  "models": [
+    {
+      "seed": 20260811,
+      "path": "04_analysis\\runs\\stage1c_v1\\models\\fcn_realtime_seed_20260811.pt",
+      "sha256": "1efa857d744271259aad56b715917d1ac68b545c016259700c322e15ba352464",
+      "final_training_loss": 0.022576507525591868,
+      "runtime_seconds": 99.9940927028656
+    },
+    {
+      "seed": 20260812,
+      "path": "04_analysis\\runs\\stage1c_v1\\models\\fcn_realtime_seed_20260812.pt",
+      "sha256": "0717fc79dfb01f44e640cba3febbd8efe2644459306a0b8177e662529131d9c9",
+      "final_training_loss": 0.02774052533841743,
+      "runtime_seconds": 101.55573320388794
+    },
+    {
+      "seed": 20260813,
+      "path": "04_analysis\\runs\\stage1c_v1\\models\\fcn_realtime_seed_20260813.pt",
+      "sha256": "4bfc20a399108322f3cb243cd222e489e7c7848941a66e71b5f9605922fa23e1",
+      "final_training_loss": 0.025645970740890877,
+      "runtime_seconds": 101.18038582801819
+    },
+    {
+      "seed": 20260814,
+      "path": "04_analysis\\runs\\stage1c_v1\\models\\fcn_realtime_seed_20260814.pt",
+      "sha256": "846b1bccaac372a4753efea80234a289fb98fe38617705535d379ae4e5eb9bb1",
+      "final_training_loss": 0.05043060493868167,
+      "runtime_seconds": 99.88455557823181
+    },
+    {
+      "seed": 20260815,
+      "path": "04_analysis\\runs\\stage1c_v1\\models\\fcn_realtime_seed_20260815.pt",
+      "sha256": "1447770a8c9272a012f24c7f80c204a391c39ec409b8dfac1c09e6ba045d2c82",
+      "final_training_loss": 0.026554547895596723,
+      "runtime_seconds": 98.40563416481018
+    }
+  ],
+  "preprocessing_sha256": "aa6a96938095845d1905d17c2e965f9a7da8040e923142cdab8c6fbf5a2360ca",
+  "inference_code_sha256": "9e7472917208aa90c8e36b103ffdeefbf7033c4fcbfc7d3ef701115f520cefc7",
+  "apply_frozen_script_sha256": "855276d6907df3aec32252b7b8d849fcc878a00bd55a47b7c586fbd7028066ae",
+  "environment": {
+    "python": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "external_cohort_count_correction": "PRE-INFERENCE METADATA CORRECTION",
+  "external_label_modification": "NONE",
+  "external_model_adaptation": "NONE",
+  "external_recalibration": "NONE",
+  "external_threshold_optimization": "NONE",
+  "external_label_informed_preprocessing": "NONE",
+  "descriptive_metrics_sha256": "d2e3fbbc87be0260bd544ab7849647f55318ac51b417296cd5fbc1b40568d3b7"
+}

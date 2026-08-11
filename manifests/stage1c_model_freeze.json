@@ -1,0 +1,56 @@
+{
+  "models": [
+    {
+      "seed": 20260811,
+      "path": "04_analysis\\runs\\stage1c_v1\\models\\fcn_realtime_seed_20260811.pt",
+      "sha256": "1efa857d744271259aad56b715917d1ac68b545c016259700c322e15ba352464",
+      "final_training_loss": 0.022576507525591868,
+      "runtime_seconds": 99.9940927028656
+    },
+    {
+      "seed": 20260812,
+      "path": "04_analysis\\runs\\stage1c_v1\\models\\fcn_realtime_seed_20260812.pt",
+      "sha256": "0717fc79dfb01f44e640cba3febbd8efe2644459306a0b8177e662529131d9c9",
+      "final_training_loss": 0.02774052533841743,
+      "runtime_seconds": 101.55573320388794
+    },
+    {
+      "seed": 20260813,
+      "path": "04_analysis\\runs\\stage1c_v1\\models\\fcn_realtime_seed_20260813.pt",
+      "sha256": "4bfc20a399108322f3cb243cd222e489e7c7848941a66e71b5f9605922fa23e1",
+      "final_training_loss": 0.025645970740890877,
+      "runtime_seconds": 101.18038582801819
+    },
+    {
+      "seed": 20260814,
+      "path": "04_analysis\\runs\\stage1c_v1\\models\\fcn_realtime_seed_20260814.pt",
+      "sha256": "846b1bccaac372a4753efea80234a289fb98fe38617705535d379ae4e5eb9bb1",
+      "final_training_loss": 0.05043060493868167,
+      "runtime_seconds": 99.88455557823181
+    },
+    {
+      "seed": 20260815,
+      "path": "04_analysis\\runs\\stage1c_v1\\models\\fcn_realtime_seed_20260815.pt",
+      "sha256": "1447770a8c9272a012f24c7f80c204a391c39ec409b8dfac1c09e6ba045d2c82",
+      "final_training_loss": 0.026554547895596723,
+      "runtime_seconds": 98.40563416481018
+    }
+  ],
+  "epoch_lock_hash": "aeff35b2335b33253c3fadd0ddd665521c7ed764ae9a857af6576d1c948ddd7e",
+  "config_hash": "95975a17129c13d8b525bf7129ea0208cb9e3e310547101e4384a7200953a156",
+  "amendment_hash": "4acdc2b0694642929d462d6c3682ac6a42575d246a8eaf20b48cf85e3f0ad6a3",
+  "preprocessing_hash": "aa6a96938095845d1905d17c2e965f9a7da8040e923142cdab8c6fbf5a2360ca",
+  "train_tensor_hash": "d6ae3b52109495da7c5e7fcbe2304a2882efcda801dd3027fe340fadb57da043",
+  "fold_hash": "258a2290c4f43dd653e6634bfbb8c3f999b231c8c6c39c0a95ac45bc3dc7fa10",
+  "ensemble_hash": "4e5025841674dbbad88911835259ffb5980fd2e911a5f82a27272016b3ff69a6",
+  "environment": {
+    "python": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+    "torch": "2.13.0+cu126",
+    "device": "cuda",
+    "deterministic_algorithms": false,
+    "determinism_note": "Fixed RNG/configuration provenance; CUDA AdaptiveMaxPool1d backward has no bitwise-deterministic implementation in this environment."
+  },
+  "timestamp": "2026-08-11T04:00:09.236551+00:00",
+  "ensemble_md_hash": "10a60ade1aed5c9cd4cfc831a81a4b4589177c96cb42d9497e20049cb0778a33",
+  "code_hash": "ee5d9c0945a897d45cc06f3ee75f683f5a99711c4fd7a97dff4d66d5aa8827ef"
+}

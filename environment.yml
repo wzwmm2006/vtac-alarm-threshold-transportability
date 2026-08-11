@@ -1,0 +1,13 @@
+﻿name: vtac-transportability
+channels: [conda-forge, pytorch]
+dependencies:
+  - python=3.12
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - pytorch
+  - wfdb
+  - pyyaml
+  - pytest

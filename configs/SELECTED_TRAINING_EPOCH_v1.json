@@ -1,0 +1,26 @@
+{
+  "selected_epoch": 31,
+  "selection_metric": "mean held-out TRAIN-fold AUROC",
+  "fold_assignment_hash": "258a2290c4f43dd653e6634bfbb8c3f999b231c8c6c39c0a95ac45bc3dc7fa10",
+  "preprocessing_hash": "aa6a96938095845d1905d17c2e965f9a7da8040e923142cdab8c6fbf5a2360ca",
+  "fcn_config_v3_hash": "95975a17129c13d8b525bf7129ea0208cb9e3e310547101e4384a7200953a156",
+  "cv_seed": 20260811,
+  "fold_auc": [
+    {
+      "fold": 1,
+      "heldout_auc": 0.9312394612708375
+    },
+    {
+      "fold": 2,
+      "heldout_auc": 0.9097590580485092
+    },
+    {
+      "fold": 3,
+      "heldout_auc": 0.9191644688145493
+    }
+  ],
+  "mean_auc": 0.9200543293779653,
+  "timestamp": "2026-08-11T03:51:48.085395+00:00",
+  "code_hash": "ee5d9c0945a897d45cc06f3ee75f683f5a99711c4fd7a97dff4d66d5aa8827ef",
+  "git_commit": null
+}

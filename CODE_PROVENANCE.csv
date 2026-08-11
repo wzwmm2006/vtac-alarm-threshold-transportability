@@ -1,0 +1,8 @@
+﻿file,classification,upstream_source,upstream_license,modification_summary,release_status
+src/preprocessing/vtac_stage1b_pipeline_v3.py,B,https://github.com/ML-Health/VTaC,MIT,Adapted from official VTaC preprocessing behavior; window-first leakage-safe filtering and release-native ontology are project-specific,ATTRIBUTION_REQUIRED
+src/training/vtac_stage1c_train.py,B,https://github.com/ML-Health/VTaC,MIT,Adapted official-style realtime FCN training implementation with TRAIN-only grouped CV and frozen seeds,ATTRIBUTION_REQUIRED
+src/inference/vtac_stage1d_validation_infer.py,B,https://github.com/ML-Health/VTaC,MIT,Adapted official-style FCN inference with frozen project preprocessing and ensemble guard,ATTRIBUTION_REQUIRED
+src/inference/vtac_stage1e_test_infer.py,B,https://github.com/ML-Health/VTaC,MIT,Adapted official-style FCN inference with frozen-threshold scope guard,ATTRIBUTION_REQUIRED
+src/inference/challenge2015_external_infer.py,B,https://github.com/ML-Health/VTaC,MIT,Adapted official-style FCN inference for external fixed-threshold transport evaluation,ATTRIBUTION_REQUIRED
+src/evaluation/vtac_safety_thresholds.py,A,This study repository,MIT,Frozen threshold lock and apply-frozen evaluation implementation,PUBLIC
+tests/*,A,This study repository,MIT,Regression tests derived for this release,PUBLIC

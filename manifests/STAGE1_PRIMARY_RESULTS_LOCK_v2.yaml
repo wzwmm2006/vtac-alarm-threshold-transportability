@@ -1,0 +1,18 @@
+schema: stage1-primary-results-lock-v2
+status: frozen_manuscript_reconciliation
+rounding: Python format specification :.4f (round-half-even)
+primary_threshold: 0.102635692
+secondary_thresholds: [0.065468185, 0.022276472]
+validation: {N: 495, true_vt: 141, false_vt: 354, auroc: 0.9424, auroc_ci: [0.9146, 0.9653], tau95: {TP: 134, FN: 7, TN: 265, FP: 89, sensitivity: 0.9504, sensitivity_ci: [0.9051, 0.9862], fasr: 0.7486, fasr_ci: [0.6897, 0.8029]}}
+test: {N: 482, true_vt: 137, false_vt: 345, auroc: 0.9175, auroc_ci: [0.8794, 0.9520], tau95: {TP: 130, FN: 7, TN: 229, FP: 116, sensitivity: 0.9489, sensitivity_ci: [0.8899, 0.9915], fasr: 0.6638, fasr_ci: [0.6006, 0.7240]}}
+external: {N: 341, true_vt: 89, false_vt: 252, auroc: 0.9411, auroc_ci: [0.9043, 0.9711], tau95: {TP: 85, FN: 4, TN: 158, FP: 94, sensitivity: 0.9551, sensitivity_ci: [0.9062, 0.9897], fasr: 0.6270, fasr_ci: [0.5667, 0.6867]}}
+transport_deltas:
+  test_minus_validation:
+    sensitivity: {estimate: -0.0014, ci: [-0.0674, 0.0625]}
+    fasr: {estimate: -0.0848, ci: [-0.1676, 0.0010]}
+  external_minus_validation:
+    sensitivity: {estimate: 0.0047, ci: [-0.0566, 0.0661]}
+    fasr: {estimate: -0.1216, ci: [-0.2028, -0.0383]}
+  external_minus_test:
+    sensitivity: {estimate: 0.0062, ci: [-0.0588, 0.0762]}
+    fasr: {estimate: -0.0368, ci: [-0.1223, 0.0508]}

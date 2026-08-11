@@ -1,0 +1,132 @@
+{
+  "schema": "stage1-primary-results-canonical-v2",
+  "rounding": "Python format specification :.4f (round-half-even)",
+  "primary_threshold": 0.102635692,
+  "secondary_thresholds": [
+    0.065468185,
+    0.022276472
+  ],
+  "cohorts": [
+    {
+      "name": "Validation",
+      "n": 495,
+      "true_vt": 141,
+      "false_vt": 354,
+      "auroc": 0.9424,
+      "auroc_ci": [
+        0.9146,
+        0.9653
+      ],
+      "tp": 134,
+      "fn": 7,
+      "tn": 265,
+      "fp": 89,
+      "sensitivity": 0.9504,
+      "sensitivity_ci": [
+        0.9051,
+        0.9862
+      ],
+      "fasr": 0.7486,
+      "fasr_ci": [
+        0.6897,
+        0.8029
+      ]
+    },
+    {
+      "name": "VTaC Test",
+      "n": 482,
+      "true_vt": 137,
+      "false_vt": 345,
+      "auroc": 0.9175,
+      "auroc_ci": [
+        0.8794,
+        0.952
+      ],
+      "tp": 130,
+      "fn": 7,
+      "tn": 229,
+      "fp": 116,
+      "sensitivity": 0.9489,
+      "sensitivity_ci": [
+        0.8899,
+        0.9915
+      ],
+      "fasr": 0.6638,
+      "fasr_ci": [
+        0.6006,
+        0.724
+      ]
+    },
+    {
+      "name": "Challenge 2015 External",
+      "n": 341,
+      "true_vt": 89,
+      "false_vt": 252,
+      "auroc": 0.9411,
+      "auroc_ci": [
+        0.9043320111378577,
+        0.971121391513804
+      ],
+      "tp": 85,
+      "fn": 4,
+      "tn": 158,
+      "fp": 94,
+      "sensitivity": 0.9550561797752809,
+      "sensitivity_ci": [
+        0.90625,
+        0.9896907216494846
+      ],
+      "fasr": 0.626984126984127,
+      "fasr_ci": [
+        0.5666634980988593,
+        0.6867469879518072
+      ]
+    }
+  ],
+  "transport_deltas": [
+    {
+      "comparison": "Test - Validation",
+      "delta_sensitivity": -0.0014495004400270073,
+      "sensitivity_ci": [
+        -0.0674,
+        0.0625
+      ],
+      "delta_fasr": -0.08481945467943997,
+      "fasr_ci": [
+        -0.1676,
+        0.001
+      ]
+    },
+    {
+      "comparison": "External - Validation",
+      "delta_sensitivity": 0.004701569846202847,
+      "sensitivity_ci": [
+        -0.0566,
+        0.0661
+      ],
+      "delta_fasr": -0.12160344363734199,
+      "fasr_ci": [
+        -0.2028,
+        -0.0383
+      ]
+    },
+    {
+      "comparison": "External - Test",
+      "delta_sensitivity": 0.006151070286229854,
+      "sensitivity_ci": [
+        -0.0588,
+        0.0762
+      ],
+      "delta_fasr": -0.036783988957902025,
+      "fasr_ci": [
+        -0.1223,
+        0.0508
+      ]
+    }
+  ],
+  "source_artifacts": {
+    "stage1f_safety_utility_metrics": "04_analysis/runs/stage1f_v1/stage1_external_frozen_results/safety_utility_metrics.csv",
+    "stage1f_external_descriptive_metrics": "04_analysis/runs/stage1f_v1/external_descriptive_metrics.json",
+    "stage1f_external_evaluation_manifest": "09_reproducibility/manifests/stage1f_external_evaluation.json"
+  }
+}

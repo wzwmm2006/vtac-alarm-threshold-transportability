@@ -1,0 +1,21 @@
+{
+  "schema": "vtac-stage1d-threshold-freeze-v1",
+  "validation_scores_sha256": "bbd8a56aeef0193633aa652fb13e2474b013d34cc2ebcd09fca13373f12b31b7",
+  "locked_thresholds_sha256": "08f14c56832b2fee332866b40b2f079f7447768e14147fa731d1b072a7ab384f",
+  "threshold_lock_manifest_sha256": "738d90e47991994da59ef85b4669c04bdfd84977b374635e995a596fff367d35",
+  "threshold_script_sha256": "855276d6907df3aec32252b7b8d849fcc878a00bd55a47b7c586fbd7028066ae",
+  "model_freeze_manifest_sha256": "a3b18d3f07383b1ede84607c95c33d909da6fd99534e1a7ef1851e704dd198dc",
+  "ensemble_lock_yaml_sha256": "4e5025841674dbbad88911835259ffb5980fd2e911a5f82a27272016b3ff69a6",
+  "ensemble_lock_md_sha256": "10a60ade1aed5c9cd4cfc831a81a4b4589177c96cb42d9497e20049cb0778a33",
+  "preprocessing_v3_sha256": "aa6a96938095845d1905d17c2e965f9a7da8040e923142cdab8c6fbf5a2360ca",
+  "inference_code_sha256": "58437f5e6d268afffee2ea0e36a3896528edd4038d4a70e679e73198b667d83d",
+  "validation_qa_sha256": "3c887e192885b27f2032f9e1d7c5d66f733f761a6b2354fd11628a5f187f0946",
+  "threshold_lock_command": "py 03_code/analysis/vtac_safety_thresholds.py lock-threshold 04_analysis/runs/stage1d_v1/validation_scores.csv --model-artifact x5 --outdir 04_analysis/runs/stage1d_v1/stage1_threshold_lock",
+  "environment": {
+    "python": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "descriptive_metrics_sha256": "d4fb822dbad598243ac8399964187cfb7a9e02889fd94e3a68c13ef4ed12e92f",
+  "test_waveforms_accessed": false,
+  "external_accessed": false
+}
